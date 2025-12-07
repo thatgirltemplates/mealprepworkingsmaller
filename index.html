@@ -9,7 +9,48 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 /* --- NOTION SIZE FIX (MAKE WIDGET SHORTER + SMALLER) --- */
+  /* ---- MAKE WIDGET MUCH SHORTER FOR NOTION ---- */
 
+.dashboard-container {
+  max-width: 640px !important;   /* narrower */
+}
+
+/* Reduce padding on all cards */
+.stat-card,
+.progress-card,
+.content-card,
+.insights-card {
+  padding: 12px !important;
+}
+
+/* Make progress rings smaller */
+.ring-wrapper {
+  width: 80px !important;
+  height: 80px !important;
+}
+
+.progress-ring-circle {
+  stroke-width: 6 !important;
+}
+
+/* Reduce spacing between sections */
+.stats-grid,
+.progress-card,
+.content-grid,
+.insights-card {
+  margin-top: 6px !important;
+  margin-bottom: 6px !important;
+}
+
+/* Make the content grid 2 columns → shorter height */
+.content-grid {
+  grid-template-columns: 1fr 1fr !important;
+}
+
+/* Reduce task-list max height */
+.task-list {
+  max-height: 180px !important;
+}
 .dashboard-container {
   max-width: 680px !important; /* narrower = fits better in Notion */
 }
@@ -1454,4 +1495,5 @@
   </script>
 </body>
 </html>
+
 
