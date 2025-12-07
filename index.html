@@ -7,7 +7,38 @@
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* --- NOTION SIZE FIX (MAKE WIDGET SHORTER + SMALLER) --- */
 
+.dashboard-container {
+  max-width: 680px !important; /* narrower = fits better in Notion */
+}
+
+/* Reduce space around all sections */
+.stats-grid,
+.progress-card,
+.content-grid,
+.insights-card {
+  margin-top: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+/* Make content grid two columns max → shorter height */
+.content-grid {
+  grid-template-columns: 1fr 1fr !important;
+}
+
+/* Smaller cards = shorter widget */
+.content-card,
+.progress-card {
+  padding: 14px 16px !important;
+}
+
+/* Reduce top padding of wrapper */
+.dashboard-wrapper {
+  padding-top: 8px !important;
+}
+</style>
   <style>
     body {
       box-sizing: border-box;
@@ -1423,3 +1454,4 @@
   </script>
 </body>
 </html>
+
